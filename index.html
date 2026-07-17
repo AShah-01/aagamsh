@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aagam Shah | AIML Major Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2E59D7",
+                            secondary: "#000080",
+                            base: "#FAF9F6",
+                        },
+                        fontFamily: {
+                            inter: ["Inter", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="site-header">
+            <div>
+                <a href="#home">Aagam Shah</a>
+                <div class="desktop-links nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#robotics">Robotics</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Connect</a>
+                </div>
+                <div>
+                    <button
+                        class="desktop-nav-toggle"
+                        type="button"
+                        aria-expanded="true"
+                    >
+                        Hide Nav
+                    </button>
+                    <button
+                        class="menu-button"
+                        type="button"
+                        aria-label="Open menu"
+                    >
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <aside class="mobile-menu nav-links" data-open="false">
+            <div>
+                <span>Menu</span>
+                <button
+                    class="close-menu-button"
+                    type="button"
+                    aria-label="Close menu"
+                >
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#robotics">Robotics</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Connect</a>
+            </div>
+            <p>© 2026 Aagam Shah</p>
+        </aside>
+        <div class="menu-overlay" hidden></div>
+
+        <main>
+            <section id="home" class="section-shell" data-reveal>
+                <div class="hero-inner">
+                    <div data-reveal>
+                        <div class="availability-badge">
+                            <span data-status-dot></span>
+                            Available for Projects
+                        </div>
+                        <h1>
+                            Software Developer &<br />
+                            <span> AI/ML Major</span>
+                        </h1>
+                        <p>
+                            Computer Science student at Western Sydney
+                            University majoring in AI and ML, with a strong
+                            background in Python, Java, and autonomous systems.
+                            I leverage internship experience and CAD design
+                            expertise from the RAM Club to deliver innovative
+                            technical solutions.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects">View my Technical CV</a>
+                            <a href="#contact">Discuss Collaboration</a>
+                        </div>
+                    </div>
+                    <div data-reveal>
+                        <div class="hero-visual">
+                            <div class="hero-glow"></div>
+                            <div class="hero-orb orb-1"></div>
+                            <div class="hero-orb orb-2"></div>
+                            <img
+                                src="images/Aagam Shah.jpeg"
+                                alt="Aagam Shah"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section-shell" data-reveal>
+                <div>
+                    <h2 data-title>Skill Matrix</h2>
+                    <div class="skills-grid card-grid">
+                        <article>
+                            <h3><i data-lucide="code-2"></i> Languages</h3>
+                            <p>Python</p>
+                            <p>Java</p>
+                            <p>SQL</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>C++</p>
+                        </article>
+                        <article>
+                            <h3><i data-lucide="bot"></i> AI / Robotics</h3>
+                            <p>Computer Vision</p>
+                            <p>RoboCup SSL</p>
+                            <p>TensorFlow</p>
+                            <p>CAD Design</p>
+                            <p>PyTorch</p>
+                        </article>
+                        <article>
+                            <h3><i data-lucide="wrench"></i> Tools</h3>
+                            <p>Windows</p>
+                            <p>Linux</p>
+                            <p>GitHub</p>
+                            <p>AWS</p>
+                            <p>Docker</p>
+                            <p>Microsoft Suite</p>
+                            <p>Adobe Suite</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section-shell" data-reveal>
+                <div>
+                    <h2 data-title>Education</h2>
+                    <div class="edu-grid card-grid">
+                        <article>
+                            <div>
+                                <span
+                                    ><i data-lucide="graduation-cap"></i
+                                ></span>
+                                <div>
+                                    <h3>Bachelor of Computer Science</h3>
+                                    <p>Western Sydney University</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i data-lucide="calendar"></i>
+                                <span>2025 – Present</span>
+                                <span data-status="in-progress"
+                                    >In Progress</span
+                                >
+                            </div>
+                            <p>
+                                Majoring in Artificial Intelligence with a focus
+                                on machine learning, computer vision, and
+                                autonomous systems. Active member of the RAM
+                                Robotics Club.
+                            </p>
+                        </article>
+                        <article>
+                            <div>
+                                <span><i data-lucide="award"></i></span>
+                                <div>
+                                    <h3>
+                                        Certificate IV in Information
+                                        Communications Technology
+                                    </h3>
+                                    <p>TAFE NSW</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i data-lucide="calendar"></i>
+                                <span>2026 – Present</span>
+                                <span data-status="in-progress"
+                                    >In Progress</span
+                                >
+                            </div>
+                            <p>
+                                Foundation studies in programming, database
+                                management, networking, and systems analysis.
+                                Achieved Distinction average and served as a
+                                peer mentor for first-year students.
+                            </p>
+                        </article>
+                        <article>
+                            <div>
+                                <span><i data-lucide="award"></i></span>
+                                <div>
+                                    <h3>
+                                        Certificate III in Information
+                                        Communications Technology
+                                    </h3>
+                                    <p>TAFE NSW</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i data-lucide="calendar"></i>
+                                <span>2023 - 2024</span>
+                                <span data-status="completed">Completed</span>
+                            </div>
+                            <p>
+                                Industry certification covering cloud concepts,
+                                AWS services, security, architecture, and
+                                pricing. Demonstrates foundational understanding
+                                of cloud computing and deployment strategies.
+                            </p>
+                        </article>
+                        <article>
+                            <div>
+                                <span><i data-lucide="school"></i></span>
+                                <div>
+                                    <h3>Higher School Certificate</h3>
+                                    <p>Rouse Hill High School</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i data-lucide="calendar"></i>
+                                <span>2020 – 2024</span>
+                                <span data-status="completed">Completed</span>
+                            </div>
+                            <p>
+                                Subjects included Mathematics Standard 2,
+                                Software Design & Development, Design and
+                                Technology, and English. Along with my Cert 3
+                                TAFE Course, I developed an early passion for
+                                programming and problem-solving through
+                                project-based coursework.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section-shell" data-reveal>
+                <div>
+                    <h2 data-title>Professional Timeline</h2>
+                    <div class="timeline">
+                        <article>
+                            <div>
+                                <h3>Retail Cashier</h3>
+                                <p>Knightsbridge Newsagency</p>
+                                <p>Nov 2024 – Present</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Managed high-volume transactions
+                                            and cash operations while building
+                                            customer rapport to drive repeat
+                                            business.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Maintained accurate records through
+                                            data entry and CRM management to
+                                            ensure seamless daily business
+                                            operations.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >DeExecuted in-store marketing and
+                                            promotional activities to optimise
+                                            product presentation and the
+                                            shopping experience.</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>AI Strategy Lead</h3>
+                                <p>WSU RAM Robotics Club</p>
+                                <p>Mar 2026 – Present</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Assisting a team of engineers
+                                            developing autonomous soccer robots
+                                            for RoboCup SSL competition.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Improved ball detection accuracy
+                                            through custom ML model
+                                            optimisation.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Reduced multi-robot collisions with
+                                            improved path-planning
+                                            algorithms.</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Technical Consultant</h3>
+                                <p>DigitalZoop</p>
+                                <p>Jan 2024 – Jun 2024</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Implemented RESTful APIs in
+                                            Wordpress to integrate third-party
+                                            services, and increasing
+                                            interoperability.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Designed scalable website schemas
+                                            for client projects.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Conducted technical training
+                                            sessions for staff members.</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>ICT Support Intern</h3>
+                                <p>Penrith City Council</p>
+                                <p>Nov 2023 – Dec 2023</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Improved database query runtime
+                                            using SQL and Python.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Supported municipal staff through
+                                            enterprise network deployment.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Developed automation scripts
+                                            reducing manual data entry.</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Student IT Intern</h3>
+                                <p>Amazon Web Services</p>
+                                <p>May 2023 – Jun 2023</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Gained hands-on experience in AWS
+                                            services, architecture, and best
+                                            practices through collaborative
+                                            technical projects.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Developed proficiency in XML and
+                                            Office 365 while producing
+                                            high-quality technical documentation
+                                            and reports.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Optimised team workflows through
+                                            efficient data entry, time
+                                            management, and proactive
+                                            contribution to cloud
+                                            initiatives.</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Web Developer Intern</h3>
+                                <p>Trikon Business Solutions</p>
+                                <p>Aug 2022 – Sep 2022</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Cultivated strong communication and
+                                            teamwork abilities within a
+                                            collaborative, supportive
+                                            environment.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Developed proactive problem-solving
+                                            techniques while executing clear,
+                                            task-oriented objectives.</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <i data-lucide="send-horizontal"></i
+                                        ><span
+                                            >Enhanced professional adaptability
+                                            and workflow efficiency through
+                                            consistent feedback and team
+                                            coordination.</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="robotics"
+                class="section-shell robotics-section"
+                data-reveal
+            >
+                <div>
+                    <h2 data-title>Extracurricular Activities</h2>
+                    <div class="robotics-grid card-grid">
+                        <article>
+                            <h3>RoboCup Small Size League</h3>
+                            <p>
+                                As the AI Strategy Lead for WSU's RAM Robotics
+                                Club, I spearhead the development of autonomous
+                                soccer robots competing in the RoboCup SSL
+                                division.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i data-lucide="eye"></i
+                                    ><span
+                                        >Computer vision pipeline optimisation
+                                        using OpenCV and custom ML models.</span
+                                    >
+                                </li>
+                                <li>
+                                    <i data-lucide="git-branch"></i
+                                    ><span
+                                        >Multi-agent path planning algorithms
+                                        that reduced robot collisions.</span
+                                    >
+                                </li>
+                                <li>
+                                    <i data-lucide="cpu"></i
+                                    ><span
+                                        >Embedded systems programming for
+                                        real-time control of drive
+                                        systems.</span
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>Student Leadership Committee</h3>
+                            <p>
+                                Actively collaborated with student leaders to
+                                enhance school culture through impactful
+                                initiatives and events.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i data-lucide="box"></i
+                                    ><span
+                                        >Led school-wide events and tech clubs
+                                        to foster an inclusive and engaging
+                                        student community</span
+                                    >
+                                </li>
+                                <li>
+                                    <i data-lucide="scale"></i
+                                    ><span
+                                        >Acted as a liaison between students and
+                                        faculty, ensuring student voices
+                                        influenced campus decision-making.</span
+                                    >
+                                </li>
+                                <li>
+                                    <i data-lucide="printer"></i
+                                    ><span
+                                        >Developed collaboration skills by
+                                        leading committees and mentoring peers
+                                        on various campus-wide
+                                        initiatives.</span
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="robotics-gallery">
+                        <img
+                            src="http://static.photos/technology/320x240/10"
+                            alt="Robotics Team"
+                        />
+                        <img
+                            src="http://static.photos/technology/320x240/25"
+                            alt="CAD Design"
+                        />
+                        <img
+                            src="http://static.photos/education/320x240/55"
+                            alt="Robot Competition"
+                        />
+                        <img
+                            src="http://static.photos/technology/320x240/77"
+                            alt="3D Printing"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section-shell" data-reveal>
+                <div>
+                    <h2 data-title>Code Showcase</h2>
+                    <div class="projects-grid card-grid">
+                        <article>
+                            <div>
+                                <h3 class="HTML-Code">Dev-Vault</h3>
+                                <span class="language-tag language-tag-html"
+                                    ><span></span>HTML</span
+                                >
+                            </div>
+                            <p>
+                                A polished, plug-and-play collection of
+                                responsive developer portfolio UI components.
+                            </p>
+                            <div>
+                                <div>
+                                    <span><i data-lucide="star"></i>1</span>
+                                    <span
+                                        ><i data-lucide="git-branch"></i>1</span
+                                    >
+                                </div>
+                                <a
+                                    href="https://github.com/AShah-01/Dev-Vault"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    >View Repo <i data-lucide="arrow-right"></i
+                                ></a>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3 class="JavaScript-Code">Jargon Translation App</h3>
+                                <span
+                                    class="language-tag language-tag-javascript"
+                                    ><span></span>JavaScript</span
+                                >
+                            </div>
+                            <p>
+                                A web app that translates complex tech jargon
+                                into simple, everyday English.
+                            </p>
+                            <div>
+                                <div>
+                                    <span><i data-lucide="star"></i>1</span>
+                                    <span
+                                        ><i data-lucide="git-branch"></i>2</span
+                                    >
+                                </div>
+                                <a
+                                    href="https://github.com/AShah-01/Jargon-Translation-WebApp"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    >View Repo <i data-lucide="arrow-right"></i
+                                ></a>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3 class="Cpp-Code">Unique TicTacToe</h3>
+                                <span class="language-tag language-tag-cpp"
+                                    ><span></span>C++</span
+                                >
+                            </div>
+                            <p>
+                                A strategic twist on TicTacToe with unique
+                                rules, clean UI, and replayable gameplay.
+                            </p>
+                            <div>
+                                <div>
+                                    <span><i data-lucide="star"></i>1</span>
+                                    <span
+                                        ><i data-lucide="git-branch"></i>1</span
+                                    >
+                                </div>
+                                <a
+                                    href="https://github.com/AShah-01/Unique-TicTacToe"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    >View Repo <i data-lucide="arrow-right"></i
+                                ></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="github-cta">
+                        <a
+                            href="https://github.com/AShah-01"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Explore More on GitHub</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-shell" data-reveal>
+                <div>
+                    <h2 data-title>Let's Connect</h2>
+                    <div class="contact-grid">
+                        <div>
+                            <div>
+                                <span data-status-dot></span>
+                                <span
+                                    >Currently Available for Weekend
+                                    Projects</span
+                                >
+                            </div>
+                            <p>
+                                Whether you are looking for an AI engineer, a
+                                robotics collaborator, a dedicated web developer
+                                for your personal or company site, or simply
+                                want to chat about technology, I&apos;d love to
+                                hear from you.
+                            </p>
+                            <div class="contact-links">
+                                <a href="#">
+                                    <span><i data-lucide="map-pin"></i></span>
+                                    <div>
+                                        <p>Location</p>
+                                        <p>Sydney, Australia</p>
+                                    </div>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/aagam-s"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <span><i data-lucide="linkedin"></i></span>
+                                    <div>
+                                        <p>LinkedIn</p>
+                                        <p>linkedin.com/in/aagam-s</p>
+                                    </div>
+                                </a>
+                                <a
+                                    href="https://github.com/AShah-01"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <span><i data-lucide="github"></i></span>
+                                    <div>
+                                        <p>GitHub</p>
+                                        <p>github.com/AShah-01</p>
+                                    </div>
+                                </a>
+                                <div class="contact-link-wrapper">
+                                    <a href="mailto:aadamsh.06@gmail.com">
+                                        <span><i data-lucide="mail"></i></span>
+                                        <div>
+                                            <p>Email</p>
+                                            <p>aadamsh.06@gmail.com</p>
+                                        </div>
+                                    </a>
+                                    <button
+                                        class="copy-email-btn"
+                                        type="button"
+                                        aria-label="Copy email address"
+                                        title="Copy email to clipboard"
+                                    >
+                                        <i data-lucide="copy"></i>
+                                    </button>
+                                </div>
+                                <a href="tel:+61404651632">
+                                    <span><i data-lucide="phone"></i></span>
+                                    <div>
+                                        <p>Phone</p>
+                                        <p>+61 404 651 632</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <form class="contact-form" method="post" novalidate>
+                                <div>
+                                    <label for="nameInput">Full Name</label>
+                                    <input
+                                        id="nameInput"
+                                        name="name"
+                                        type="text"
+                                        required
+                                        placeholder="Your name"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="emailInput"
+                                        >Email Address</label
+                                    >
+                                    <input
+                                        id="emailInput"
+                                        name="email"
+                                        type="email"
+                                        required
+                                        placeholder="your@email.com"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="ss">Subject</label>
+                                    <select id="ss" name="subject" required>
+                                        <option>
+                                            Collaboration Opportunity
+                                        </option>
+                                        <option>Job Opportunity</option>
+                                        <option>Robotics Project</option>
+                                        <option>General Inquiry</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div id="osf" hidden>
+                                    <label for="osi">Custom Subject</label>
+                                    <input
+                                        id="osi"
+                                        name="customSubject"
+                                        type="text"
+                                        placeholder="Enter your subject"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="messageInput">Message</label>
+                                    <textarea
+                                        id="messageInput"
+                                        name="message"
+                                        required
+                                        rows="4"
+                                        placeholder="Tell me about your project..."
+                                    ></textarea>
+                                </div>
+                                <input
+                                    type="text"
+                                    name="company"
+                                    tabindex="-1"
+                                    autocomplete="off"
+                                    hidden
+                                />
+                                <button type="submit">
+                                    <i data-lucide="send"></i> Send Message
+                                </button>
+                                <div class="form-status" hidden></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-shell">
+                <div class="footer-brand">
+                    <a href="#home">Aagam Shah</a>
+                    <p>Engineering Logic, Architecting AI.</p>
+                </div>
+                <p class="footer-location">Sydney, Australia</p>
+                <div class="footer-social">
+                    <a
+                        href="https://github.com/AShah-01"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="GitHub"
+                        ><i data-lucide="github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/aagam-s"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                        ><i data-lucide="linkedin"></i
+                    ></a>
+                    <a href="mailto:aadamsh.06@gmail.com" aria-label="Email"
+                        ><i data-lucide="mail"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="footer-base">
+                <p>©Aagam_Shah 2026. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <button class="back-to-top" type="button" aria-label="Back to top">
+            <i data-lucide="arrow-up"></i>
+        </button>
+
+        <script src="https://unpkg.com/lucide@0.344.0"></script>
+        <script src="backend/script.js"></script>
+    </body>
+</html>
