@@ -72,13 +72,15 @@ exports.handler = async (event) => {
             };
         }
 
-        const apiKey = process.env.MAILGUN_API_KEY;
-        const domain = process.env.MAILGUN_DOMAIN;
+        const apiKey = process.env.RESEND_API_KEY;
         const toEmail = process.env.MAIL_TO || "aagamshah250506@gmail.com";
+        // Until a custom domain is verified in Resend, sends must come from
+        // this shared onboarding address - swap in your own once verified,
+        // e.g. "Website Contact <contact@yourdomain.com>"
         const fromEmail =
-            process.env.MAIL_FROM || `Website Contact <postmaster@${domain}>`;
+            process.env.MAIL_FROM || "Website Contact <onboarding@resend.dev>";
 
-        if (!apiKey || !domain) {
+        if (!apiKey) {
             return {
                 statusCode: 500,
                 headers: defaultHeaders,
@@ -107,29 +109,24 @@ exports.handler = async (event) => {
             "------- End of Message -------",
         ].join("\n");
 
-        const formData = new URLSearchParams();
-        formData.append("from", fromEmail);
-        formData.append("to", toEmail);
-        formData.append("subject", `${sanitizedSubject} - Website`);
-        formData.append("text", textBody);
-        formData.append("h:Reply-To", email);
-
-        const authToken = Buffer.from(`api:${apiKey}`).toString("base64");
-        const response = await fetch(
-            `https://api.mailgun.net/v3/${domain}/messages`,
-            {
-                method: "POST",
-                headers: {
-                    Authorization: `Basic ${authToken}`,
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-                body: formData,
+        const response = await fetch("https://api.resend.com/emails", {
+            method: "POST",
+            headers: {
+                Authorization: `Bearer ${apiKey}`,
+                "Content-Type": "application/json",
             },
-        );
+            body: JSON.stringify({
+                from: fromEmail,
+                to: [toEmail],
+                reply_to: email,
+                subject: `${sanitizedSubject} - Website`,
+                text: textBody,
+            }),
+        });
 
         if (!response.ok) {
             const errorText = await response.text();
-            console.error("Mailgun error:", errorText);
+            console.error("Resend error:", errorText);
 
             return {
                 statusCode: 502,
