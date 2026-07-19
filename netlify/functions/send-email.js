@@ -73,7 +73,7 @@ exports.handler = async (event) => {
         }
 
         const apiKey = process.env.RESEND_API_KEY;
-        const toEmail = process.env.MAIL_TO || "aagamshah250506@gmail.com";
+        const toEmail = process.env.MAIL_TO || "aadamsh.06@gmail.com";
         // Until a custom domain is verified in Resend, sends must come from
         // this shared onboarding address - swap in your own once verified,
         // e.g. "Website Contact <contact@yourdomain.com>"
